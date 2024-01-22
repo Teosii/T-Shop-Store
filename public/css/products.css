@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  border-bottom: 1px solid black;
+}
+.nav-items {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-items li {
+  list-style: none;
+}
+.nav-items a {
+  text-decoration: none;
+  color: black;
+  padding: 25px 50px;
+  font-weight: 300;
+  border-right: 1px solid black;
+  transition: 0.5s all ease;
+}
+.nav-items a:hover {
+  background-color: black;
+  color: #d6ff38;
+}
+.logo a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.logo {
+  width: 15%;
+  padding: 23px;
+  border-right: 1px solid black;
+  background-color: #d6ff38;
+  text-align: center;
+}
+.login {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  margin-left: 50px;
+}
+.login span {
+  font-size: 18px;
+  color: black;
+  font-weight: lighter;
+  padding: 0 5px;
+}
+.fa-circle-user {
+  font-size: 25px;
+}
+.cart {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.fa-cart-shopping {
+  font-size: 25px;
+}
+.product-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  width: 100%;
+  height: 100vh;
+}
+.image-display img{
+  width: 400px;
+  height: 400xp;
+  border: 1px solid black;
+}
+.area{
+  margin-top: 60px;
+}
+.article h1{
+  font-size: 35px;
+}
+.article .code{
+  font-size: 18px;
+  font-weight: lighter;
+}
+.article .price{
+  font-size: 18px;
+  font-weight: lighter;
+}
+.addCart{
+  width: 120px;
+  height: 30px;
+}
+.quantity{
+  width: 90px;
+  height: 40px;
+  border: 1px solid gray;
+}
+#accordion {
+  width: 500px;
+  margin-top: 100px;
+}
+#accordion li {
+  list-style: none;
+  width: 72%;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+#accordion li label {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  cursor: pointer;
+  color: black;
+  font-weight: lighter;
+}
+.content p {
+  color: black;
+  font-weight: 400;
+}
+#accordion label + input[type="radio"] {
+  display: none;
+}
+#accordion .content {
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+#accordion label + input[type="radio"]:checked + .content {
+  max-height: 400px;
+}
